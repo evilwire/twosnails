@@ -3,3 +3,5 @@ _site
 # IntelliJ
 .idea/
 **/*.iml
+
+.DS_Store
