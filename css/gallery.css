@@ -1,7 +1,7 @@
 .my-gallery {
     width: 100%;
     height: auto;
-    float: left;
+    float:left;
 }
 
 .my-gallery figure {
@@ -27,7 +27,12 @@ img {
 
 .gallery-row {
     max-width: 800px;
-    margin: 24px auto;
+    margin: 8vh auto;
     padding: 0 30px;
     position: relative;
+}
+
+.credit {
+    text-align: center;
+    font-size: 15px;
 }

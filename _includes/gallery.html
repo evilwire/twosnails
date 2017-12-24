@@ -65,9 +65,19 @@
 
 </div>
 
-<div class="gallery-row">
+<section id="download" class="content-section text-center">
+  <div class="download-section">
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>Gallery</h2>
+        <p class="intro-text">画廊</p><br>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gallery-row row">
   <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-    
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
       <a href="{{ "/img/looking.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="600x400">
         <img src="{{ "/img/thumb/looking.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" alt="Image description" />
@@ -83,3 +93,6 @@
     </figure>
   </div>
 </div>
+
+<div><p class="credit">All photos taken by <a href="https://www.afogartyphotography.com/">A. Fogarty</a>.</p></div>
+
