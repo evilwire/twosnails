@@ -6,7 +6,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    Denise and Knight
+		  {{site.data.nav[include.language]["names"]}}
                 </a>
             </div>
 
@@ -18,17 +18,26 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/{{include.language}}">About Us</a>
+                        <a class="page-scroll" href="/{{include.language}}">{{site.data.nav[include.language]["about"]}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/{{include.language}}/details/">Wedding</a>
+                        <a class="page-scroll" href="/{{include.language}}/details/">{{site.data.nav[include.language]["wedding"]}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/{{include.language}}/registry/">Registry</a>
+                        <a class="page-scroll" href="/{{include.language}}/registry/">{{site.data.nav[include.language]["registry"]}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/{{include.language}}/rsvp/">RSVP</a>
+                        <a class="page-scroll" href="/{{include.language}}/rsvp/">{{site.data.nav[include.language]["rsvp"]}}</a>
                     </li>
+		    {% for langhash in site.data.nav %}
+		    {% assign language = langhash[1] %}
+		    {% if langhash[0] != include.language %}
+		    <li>
+                      <a class="page-scroll" href="/{{langhash[0]}}">{{language.langname}}</a>
+		    </li>
+		    {% endif %}
+		    {% endfor %}		    
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

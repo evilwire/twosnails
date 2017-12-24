@@ -3,7 +3,7 @@
     {% include head.html %}
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     {% include nav.html language=page.language %}
-    {% include header.html title="RSVP" description="敬请回复" %}
-    {% include rsvp-details.html %}
+    {% include header.html title=page.title %}
+    {% include rsvp-details.html title=page.subtitle %}
     </body>
 </html>
