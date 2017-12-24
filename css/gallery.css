@@ -1,0 +1,33 @@
+.my-gallery {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.my-gallery figure {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    display: block;
+    float: left;
+    margin: 0 12px 12px 0;
+    width: 171px;
+    line-height: 0;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.my-gallery figcaption {
+    display: none;
+}
+
+.gallery-row {
+    max-width: 800px;
+    margin: 24px auto;
+    padding: 0 30px;
+    position: relative;
+}
