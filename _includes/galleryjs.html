@@ -3,3 +3,28 @@
     <script src="{{ "/js/photoswipe/photoswipe-ui-default.min.js" | prepend: site.baseurl }}"></script> 
 
     <script src="{{ "/js/gallery.js" | prepend: site.baseurl }}"></script>
+
+<script>
+
+var items = [
+    {% for img in site.data.images %}
+    {
+        src: "img/gallery/{{img.url}}",
+        w: {{img.width}},
+        h: {{img.height}}
+    },
+    {% endfor %}
+];
+
+// define options (if needed)
+var options = {
+// optionName: 'option value'
+// for example:
+index: 0 // start at first slide
+};
+
+// Initializes and opens PhotoSwipe
+var pswpElement = document.querySelectorAll('.pswp')[0];
+var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+
+</script>

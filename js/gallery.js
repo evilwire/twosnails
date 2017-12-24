@@ -1,28 +1,9 @@
-var pswpElement = document.querySelectorAll('.pswp')[0];
+
 
 // build items array
-var items = [
-    {
-        src: "img/looking.jpg",
-        w: 600,
-        h: 400
-    },
-    {
-        src: "img/ourstory.jpg",
-        w: 1200,
-        h: 900
-    }
-];
 
-// define options (if needed)
-var options = {
-    // optionName: 'option value'
-    // for example:
-    index: 0 // start at first slide
-};
 
-// Initializes and opens PhotoSwipe
-var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+
 //gallery.init();
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
@@ -117,8 +98,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             }
             nodeIndex++;
         }
-
-
 
         if(index >= 0) {
             // open PhotoSwipe if valid index found
@@ -229,4 +208,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM('.my-gallery');
+$(document).ready(function() {
+	initPhotoSwipeFromDOM('.my-gallery');
+    });

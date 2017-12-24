@@ -10,14 +10,13 @@
     display: block;
     float: left;
     margin: 0 12px 12px 0;
-    width: 171px;
     line-height: 0;
 }
 
-img {
+.my-gallery img {
     width: auto;
     max-width: 100%;
-    height: auto;
+    height: 171px;
     border: 0;
 }
 

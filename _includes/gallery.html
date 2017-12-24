@@ -56,11 +56,10 @@
             </button>
 
             <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
+              <div class="pswp__caption__center"></div>
             </div>
 
         </div>
-
     </div>
 
 </div>
@@ -77,21 +76,16 @@
 
 <div class="gallery-row row">
   <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for img in site.data.images %}
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="{{ "/img/looking.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="600x400">
-        <img src="{{ "/img/thumb/looking.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" alt="Image description" />
+      <a href="/img/gallery/{{ img.url | prepend: site.baseurl }}" itemprop="contentUrl" data-size="{{img.width}}x{{img.height}}">
+        <img src="/img/thumb/{{ img.url | prepend: site.baseurl }}" itemprop="thumbnail" alt="{{img.caption}}" data-index="{{forloop.index0}}" />
       </a>
-      <figcaption itemprop="caption description">Image caption</figcaption>
+      <figcaption itemprop="caption description">{{img.caption}}</figcaption>
     </figure>
-    
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="{{ "/img/ourstory.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="600x400">
-        <img src="{{ "/img/thumb/ourstory.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption</figcaption>
-    </figure>
+    {% endfor %}
   </div>
 </div>
 
-<div><p class="credit">All photos taken by <a href="https://www.afogartyphotography.com/">A. Fogarty</a>.</p></div>
+<div><p class="credit">All photos taken by <a href="https://www.afogartyphotography.com/">A. Fogarty</a> in Acadia National Park, Bar Harbor, ME.</p></div>
 
