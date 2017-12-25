@@ -8,7 +8,9 @@ description: "我们的故事"
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#ffffff'
-  links: '#219ab3'
+  links: 'RGB(250,180,180)'
+  hover:
+    links: 'RGB(150,80,120)'
 
 # Footer settings
 footer: Your Website

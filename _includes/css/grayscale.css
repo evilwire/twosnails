@@ -98,7 +98,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: {{ site.color.hover.links }};
 }
 
 .light {
@@ -154,6 +154,9 @@ a:focus {
 .navbar-custom .nav li a.active {
     outline: 0;
     background-color: rgba(255,255,255,.3);
+    color: {{ site.color.links }};
+    font-weight: 400;
+    margin-left: -0.5px;
 }
 
 @media(min-width:767px) {
