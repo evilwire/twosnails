@@ -18,16 +18,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/{{include.language}}">{{site.data.nav[include.language]["about"]}}</a>
+                        <a class="page-scroll {% if include.tab == 'about' %}selected-tab{% endif %}" href="/{{include.language}}">{{site.data.nav[include.language]["about"]}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/{{include.language}}/details/">{{site.data.nav[include.language]["wedding"]}}</a>
+                        <a class="page-scroll {% if include.tab == 'wedding' %}selected-tab{% endif %}"  href="/{{include.language}}/details/">{{site.data.nav[include.language]["wedding"]}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/{{include.language}}/registry/">{{site.data.nav[include.language]["registry"]}}</a>
+                        <a class="page-scroll {% if include.tab == 'registry' %}selected-tab{% endif %}" href="/{{include.language}}/registry/">{{site.data.nav[include.language]["registry"]}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/{{include.language}}/rsvp/">{{site.data.nav[include.language]["rsvp"]}}</a>
+                        <a class="page-scroll {% if include.tab == 'rsvp' %}selected-tab{% endif %}" href="/{{include.language}}/rsvp/">{{site.data.nav[include.language]["rsvp"]}}</a>
                     </li>
 		    {% for langhash in site.data.nav %}
 		    {% assign language = langhash[1] %}

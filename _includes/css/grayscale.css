@@ -8,6 +8,10 @@
     margin: -16vh 0 5px;
 }
 
+.navbar-custom .nav li a.selected-tab {
+    font-weight: bold;
+}
+
 #about h2 {
     margin: 10vh 0 6vh;
     font-weight: 300;
