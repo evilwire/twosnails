@@ -157,6 +157,24 @@ a:focus {
     color: {{ site.color.links }};
 }
 
+@media(max-width:900px) {
+    .navbar li a {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+}
+
+@media(max-width:767px) {
+    header.intro {
+        height: 100%;
+    }
+
+    .intro .intro-body h1.brand-heading {
+        margin: auto 0 auto;
+    }
+}
+
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -326,6 +344,10 @@ a:focus {
 
     .download-section {
         padding: 100px 0;
+    }
+
+    nav .container {
+        width: auto;
     }
 
     #map {
