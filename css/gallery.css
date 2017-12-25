@@ -20,15 +20,31 @@
     border: 0;
 }
 
-.my-gallery figcaption {
-    display: none;
-}
-
 .gallery-row {
     max-width: 800px;
     margin: 8vh auto;
     padding: 0 30px;
     position: relative;
+}
+
+@media screen and (max-width: 735px) {
+    .my-gallery img {
+        height: auto;
+        max-width: 100%;
+        width: 250px;
+        border: 0;
+    }
+
+    .gallery-row {
+        max-width: 400px;
+        margin: 8vh auto;
+    	padding: 0 30px;
+    	position: relative;
+    }
+}
+
+.my-gallery figcaption {
+    display: none;
 }
 
 .credit {
