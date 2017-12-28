@@ -16,6 +16,18 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.intro-body .brand-heading.zh-header {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#about.zh-about h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#about.zh-about p {
+    font-family: serif;
+}
+
 #about h2 {
     margin: 10vh 0 6vh;
     font-weight: 300;
