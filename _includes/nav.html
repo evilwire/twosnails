@@ -6,26 +6,38 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    Denise and Knight
+                    Denise <div class="nav-and">and</div> Knight
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav {{ include.language }}-nav-bar">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll {% if include.tab == 'about' %}selected-tab{% endif %}" href="/{{include.language}}">{{site.data.nav[include.language]["about"]}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll {% if include.tab == 'wedding' %}selected-tab{% endif %}"  href="/{{include.language}}/details/">{{site.data.nav[include.language]["wedding"]}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll {% if include.tab == 'registry' %}selected-tab{% endif %}" href="/{{include.language}}/registry/">{{site.data.nav[include.language]["registry"]}}</a>
                     </li>
+                    <li>
+                        <a class="page-scroll {% if include.tab == 'rsvp' %}selected-tab{% endif %}" href="/{{include.language}}/rsvp/">{{site.data.nav[include.language]["rsvp"]}}</a>
+                    </li>
+		    {% for langhash in site.data.nav %}
+		    {% assign language = langhash[1] %}
+		    {% if langhash[0] != include.language %}
+		    <li>
+                      <a class="page-scroll" href="/{{langhash[0]}}">{{language.langname}}</a>
+		    </li>
+		    {% endif %}
+		    {% endfor %}		    
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -1,17 +1,10 @@
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="container content-section text-center {{ include.language }}-about">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2 class="">We met in college...</h2>
+                <h2>{{include.title}}</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam tincidunt nisl, in
-                    posuere arcu venenatis eu. Integer ultrices varius augue at vehicula. Aliquam suscipit purus ac
-                    fermentum efficitur. Nullam a sollicitudin magna. Pellentesque sagittis id ex non efficitur.
-                    Sed mauris libero, imperdiet at maximus eget, fermentum malesuada mauris. Integer vel fermentum
-                    velit. Donec non tortor vel nunc iaculis consectetur in sit amet lorem. Proin in tortor rutrum,
-                    dapibus arcu at, viverra ligula. Proin finibus ipsum eu ipsum laoreet, at tincidunt arcu
-                    ullamcorper. Mauris in diam augue. Duis mollis nibh velit, vel vulputate dolor faucibus pretium.
-                    Morbi ac venenatis elit.
+		  {{include.text}}
                 </p>
             </div>
         </div>

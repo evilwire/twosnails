@@ -2,10 +2,11 @@
 <html>
     {% include head.html %}
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {% include details/nav.html %}
-    {% include header.html %}
-    {% include about.html %}
-    {% include download.html %}
+    {% include nav.html language=page.language tab="wedding" %}
+    {% include header.html language=page.language title=page.title image="/img/gallery/EC2A2156.jpg" %}
+    {% include location-details.html std=page.std address1=page.address1 address2=page.address2 address3=page.address3  %}
+    {% include map.html %}
     {% include js.html %}
+    {% include mapjs.html language=page.language %}
     </body>
 </html>
