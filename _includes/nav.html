@@ -23,9 +23,11 @@
                     <li>
                         <a class="page-scroll {% if include.tab == 'wedding' %}selected-tab{% endif %}"  href="/{{include.language}}/details/">{{site.data.nav[include.language]["wedding"]}}</a>
                     </li>
+		    {% if include.language != 'zh' %}
                     <li>
                         <a class="page-scroll {% if include.tab == 'registry' %}selected-tab{% endif %}" href="/{{include.language}}/registry/">{{site.data.nav[include.language]["registry"]}}</a>
                     </li>
+		    {% endif %}
                     <li>
                         <a class="page-scroll {% if include.tab == 'rsvp' %}selected-tab{% endif %}" href="/{{include.language}}/rsvp/">{{site.data.nav[include.language]["rsvp"]}}</a>
                     </li>
