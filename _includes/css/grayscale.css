@@ -16,6 +16,14 @@
     margin-bottom: 5vh;
 }
 
+.intro .intro-body .btn-circle {
+    border-color: #555;
+}
+
+.intro .intro-body a.btn-circle {
+    color: #555;
+}
+
 .navbar-custom .nav li a.selected-tab {
     font-weight: bold;
 }
