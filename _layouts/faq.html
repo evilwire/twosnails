@@ -2,10 +2,9 @@
 <html>
     {% include head.html %}
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {% include nav.html language=page.language tab="rsvp" %}
+    {% include nav.html language=page.language tab="faq" %}
     {% include header.html language=page.language title=page.title image="/img/gallery/EC2A2221.jpg" valign="bottom" %}
-    {% include rsvp-details.html title=page.subtitle %}
+    {% include faq.html questions=page.questions %}
     {% include js.html %}
-    {% include rsvp/js.html %}
     </body>
 </html>

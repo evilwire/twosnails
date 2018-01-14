@@ -1,0 +1,13 @@
+    <section id="about" class="container content-section text-center {{ include.language }}-about">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+	      <h2></h2>
+                {% for qa in include.questions %}
+		<h3>{{ qa.q }}</h3>
+                <p>
+                  {{ qa.a }}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
