@@ -5,7 +5,7 @@ en:
   registry: Registry
   rsvp: RSVP
   langname: English
-
+  faq: FAQ
 zh:
   names: 懂意识和付微熹
   about: 关于我们
@@ -13,3 +13,4 @@ zh:
   registry: 注册处
   rsvp: 敬请回复
   langname: 中文
+  faq: 常问问题
