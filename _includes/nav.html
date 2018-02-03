@@ -31,15 +31,15 @@
                     <li>
                         <a class="page-scroll {% if include.tab == 'rsvp' %}selected-tab{% endif %}" href="/{{include.language}}/rsvp/">{{site.data.nav[include.language]["rsvp"]}}</a>
                     </li>
-		    {% for langhash in site.data.nav %}
-		    {% assign language = langhash[1] %}
-		    {% if langhash[0] != include.language %}
-		    <li>
-                      <a class="page-scroll" href="/{{langhash[0]}}">{{language.langname}}</a>
-		    </li>
-		    {% endif %}
-		    {% endfor %}		    
-
+		    <!--{% for langhash in site.data.nav %}-->
+		    <!--{% assign language = langhash[1] %}-->
+                    <!---->
+		    <!--{% if langhash[0] != include.language %}-->
+		    <!--<li>-->
+                      <!--<a class="page-scroll" href="/{{langhash[0]}}">{{language.langname}}</a>-->
+		    <!--</li>-->
+		    <!--{% endif %}-->
+		    <!--{% endfor %}-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
