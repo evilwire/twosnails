@@ -1,0 +1,16 @@
+.amazon {
+  height: 88px;
+  padding-right: 80px;
+}
+
+.crate {
+  height: 50px;
+  vertical-align: top;
+  padding-left: 50px;
+}
+
+.registry-links {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+

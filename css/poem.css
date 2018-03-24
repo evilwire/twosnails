@@ -1,0 +1,26 @@
+#poem p.poem-line
+ {
+  line-height: 0px;
+  letter-spacing: 10px;
+}
+
+#poem div {
+  padding-top: 20px;
+}
+
+#poem h2 {
+  margin-top: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0vh 0 6vh;
+  font-weight: 300;
+}
+
+#poem p {
+  font-family: serif;
+  font-size: 18px;
+  line-height: 2;
+}
+
+#poem {
+    padding-bottom: 8vh;
+}
