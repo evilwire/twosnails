@@ -36,13 +36,13 @@
                     </li>
 		    {% for langhash in site.data.nav %}
 		    {% assign language = langhash[1] %}
+                    <!---->
 		    {% if langhash[0] != include.language %}
 		    <li>
                       <a class="page-scroll" href="/{{langhash[0]}}">{{language.langname}}</a>
 		    </li>
 		    {% endif %}
-		    {% endfor %}		    
-
+		    {% endfor %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
