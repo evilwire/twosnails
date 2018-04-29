@@ -6,6 +6,13 @@
                 <p class="address">{{include.address1}}</p>
 		<p class="address">{{include.address2}}</p>
 		<p class="address">{{include.address3}}</p>
+		<p class="address">{{include.phone}}</p>
             </div>
+
+	    {% if include.linktext %}
+            <div class="col-lg-8 col-lg-offset-2">
+		<a href="{{include.site}}" class="button">{{include.linktext}}</a>
+            </div>	    
+	    {% endif %}
         </div>
     </section>
